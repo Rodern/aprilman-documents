@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Alain Kimbu</title>
-    <meta name="description" content="Portfolio of Alain Kimbu: Computer Science Teacher, Web & Mobile Developer, and Graphics Designer. Explore projects, skills, and professional achievements.">
+    <meta name="description" content="Portfolio of Alain Kimbu: App Developer, Computer Science Teacher, and Graphics Designer. Explore projects, technical skills in .NET technologies, and professional achievements since 2021.">
     <meta name="keywords" content="Alain Kimbu, Portfolio, Projects, Computer Science, Teacher, Web Developer, Mobile Developer, Graphics Designer, Cameroon, Bamenda, Douala, .NET, Xamarin, HTML, CSS, JavaScript">
     <meta name="author" content="Alain Kimbu">
     <meta name="robots" content="index, follow">
@@ -17,14 +17,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://alainkimbu.netlify.app/portfolio/index.html">
     <meta property="og:title" content="Portfolio | Alain Kimbu">
-    <meta property="og:description" content="Portfolio of Alain Kimbu: Computer Science Teacher, Web & Mobile Developer, and Graphics Designer. Explore projects, skills, and professional achievements.">
+    <meta property="og:description" content="Portfolio of Alain Kimbu: App Developer, Computer Science Teacher, and Graphics Designer. Explore projects, technical skills in .NET technologies, and professional achievements since 2021.">
     <meta property="og:image" content="https://alainkimbu.netlify.app/assets/icons/portfolio.png">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://alainkimbu.netlify.app/portfolio/index.html">
     <meta name="twitter:title" content="Portfolio | Alain Kimbu">
-    <meta name="twitter:description" content="Portfolio of Alain Kimbu: Computer Science Teacher, Web & Mobile Developer, and Graphics Designer. Explore projects, skills, and professional achievements.">
+    <meta name="twitter:description" content="Portfolio of Alain Kimbu: App Developer, Computer Science Teacher, and Graphics Designer. Explore projects, technical skills in .NET technologies, and professional achievements since 2021.">
     <meta name="twitter:image" content="https://alainkimbu.netlify.app/assets/icons/portfolio.png">
 
     <!-- WhatsApp uses Open Graph tags -->
@@ -53,12 +53,20 @@
     <link rel="stylesheet" href="../css/index.css">
 
     <script src="../assets/vendors/jquery-3.6.0.min.js"></script>
-    <script src="../assets/vendors/tailwind/tailwindcss.js" deffer></script>
-    <!--script src="../assets/vendors/tailwind/tailwind.elements.min.js" deffer></script-->
+    <script src="../assets/vendors/tailwind/tailwindcss.js" defer></script>
+    <!--script src="../assets/vendors/tailwind/tailwind.elements.min.js" defer></script-->
 </head>
-<body>
-    <header>
-
+<body class="with-header">
+    <header class="doc-header">
+        <nav>
+            <a href="../index.html" class="nav-brand ksh">Alain Kimbu</a>
+            <div class="nav-links nr">
+                <a href="../index.html">Home</a>
+                <a href="../resume/index.html">Resume</a>
+                <a href="../cv/index.html">CV</a>
+                <a href="../portfolio/index.html" class="active">Portfolio</a>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -72,9 +80,20 @@
                 <p class="nr text-xl hidden">Documents</p>
             </div>
             <div class="intro-box">
-    
+                <div class="stats-card shadow nr">
+                    <div class="stat-number text-4xl font-bold text-[#4483C4]">3+</div>
+                    <div class="stat-label text-lg">Years Experience</div>
+                </div>
+                <div class="stats-card shadow nr">
+                    <div class="stat-number text-4xl font-bold text-[#4483C4]">10+</div>
+                    <div class="stat-label text-lg">Technologies</div>
+                </div>
+                <div class="stats-card shadow nr">
+                    <div class="stat-number text-4xl font-bold text-[#4483C4]">Multiple</div>
+                    <div class="stat-label text-lg">Projects</div>
+                </div>
             </div>
-            <button class="more-btn">
+            <button class="more-btn" tabindex="0" aria-label="Scroll to content section">
                 <span class="nr text-xl">More</span>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-10 ">
@@ -83,6 +102,73 @@
                 </svg>
             </button>
         </section>
+        
+        <!-- Projects Section -->
+        <section class="projects-section nr">
+            <h2 class="ksh">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Skylon Education Platform</h3>
+                    <p>Contract app developer working on an innovative education platform based in France. Collaborating with stakeholders to deliver optimal functionality and implementing personalized client solutions.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Mobile Development</span>
+                        <span class="project-tag">Education</span>
+                        <span class="project-tag">Client Solutions</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Church Graphics & Branding</h3>
+                    <p>Ongoing graphics design work for TS Bless Music Ministry, creating creative digital displays for online advertising and developing innovative designs for a variety of graphic design needs.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Photoshop</span>
+                        <span class="project-tag">Branding</span>
+                        <span class="project-tag">Digital Design</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Hotel Management System</h3>
+                    <p>Internship project at ELISSAM Hotel where I worked on database applications using ASP.NET, JavaScript, and SQL Server. Gained experience in mobile app development and system integration.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">ASP.NET</span>
+                        <span class="project-tag">SQL Server</span>
+                        <span class="project-tag">JavaScript</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Educational Mobile Apps</h3>
+                    <p>Designed and developed mobile applications for educational purposes using Xamarin Forms and .NET MAUI, focusing on cross-platform compatibility for Android and Windows.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Xamarin</span>
+                        <span class="project-tag">.NET MAUI</span>
+                        <span class="project-tag">Mobile</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Web Development Projects</h3>
+                    <p>Multiple frontend and backend web development projects utilizing HTML, CSS, JavaScript, jQuery, and Tailwind CSS for responsive and modern web applications.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML/CSS</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Teaching & Mentorship</h3>
+                    <p>Computer Science student teacher at BCHS Nkwen and GTC Ntarinkon, developing effective teaching materials and inspiring students in programming and technology.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Education</span>
+                        <span class="project-tag">Mentorship</span>
+                        <span class="project-tag">Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <section class="cv-container content" id="content">
             <nav class="inline-menu  bg- white">
                 <a class="section-link">Profile</a>
@@ -98,22 +184,25 @@
                         </div> 
                         <p>
                                     <span class="font-bold text-xl">Experience</span>
-                                    <br>
-                                    9th Oct 2021 – 3th Sept 2021 <br>
+                                    <br><br>
+                                    <b>June 2023 – Present</b> <br>
+                                    App Developer • Contract • Skylon (Education Platform), France
+                                    <br><br>
+                                    <b>7th Jan 2023 – 31st March 2023</b><br>
+                                    Computer Science Student Teacher • BCHS Nkwen Bamenda • GTC Ntarinkon
+                                    <br><br>
+                                    <b>9th Oct 2021 – 3rd Sept 2021</b> <br>
                                     Computer Science Intern • CTO Trainee • ELISSAM Hotel Mboppi Douala
-                                    <p>
-                                        7th Jan 2022 – 28th Jan 2022<br>
-                                        Computer Science Student Teacher • BCHS Nkwen Bamenda
-                                    </p>
-                                    20th Oct 2021 – [To Present] <br>
-                                    Graphics Designer • TS Bless Music Ministry
+                                    <br><br>
+                                    <b>20th Oct 2021 – Present</b> <br>
+                                    Graphics Designer • TS Bless Music Ministry, Bamenda
 
                         </p>
                         <p>
                             <span class="font-bold text-xl">[Summary]</span>
                             <br>
-                            A young computer scientist who is passionate about who he does and put in the best to produce good results to clients.
-                            Also, a researcher about the field of computer science and like being aware of relevant things
+                            A young computer scientist who is passionate about what he does and puts in the best to produce good results to clients.
+                            Also, a researcher in the field of computer science who has a deep interest of things relevant to life, nature, science, tech society and the environment.
 
                         </p>
                         <p>
@@ -135,10 +224,13 @@
                             <b>Skills</b>
                             <i>
                                 <br>
-                                - Programming Languages: C#, C, HTML, JavaScript, CSS <br>
-                                - Libraries: jQuery <br>
-                                - Frameworks: Xamarin Forms (Mobile App Development) <br>
-                                - Web Developer (Frontend and Backend) <br>
+                                - Programming Languages: C#, C, HTML, JavaScript, CSS, SQL <br>
+                                - Libraries: jQuery, Tailwind CSS <br>
+                                - Frameworks: Xamarin Forms, .NET MAUI, Blazor <br>
+                                - Platforms & OS: .NET, Windows, Android <br>
+                                - Web Developer (Frontend & Backend) - ASP.NET <br>
+                                - Database: MySQL, SQL Server <br>
+                                - Software: Photoshop, Microsoft Excel, PhpMyAdmin, Microsoft Access <br>
                                 - Graphics Designer <br>
                                 - Computer Maintenance <br>
                             </i>
@@ -170,8 +262,42 @@
         </section>
     </main>
 
-    <footer>
-    
+    <footer class="site-footer nr">
+        <div class="footer-content">
+            <div>
+                <h3>Contact</h3>
+                <p>+237 651008132</p>
+                <p>alainkimbu@gmail.com</p>
+                <p>Bamenda, Cameroon</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <p><a href="../index.html">Home</a></p>
+                <p><a href="../resume/index.html">Resume</a></p>
+                <p><a href="../cv/index.html">Curriculum Vitae</a></p>
+                <p><a href="../portfolio/index.html">Portfolio</a></p>
+            </div>
+            <div>
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/alain-kimbu-6a9695171" target="_blank" rel="noopener" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/AlainKimbu" target="_blank" rel="noopener" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/alainkimbu" target="_blank" rel="noopener" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/alainkimbu" target="_blank" rel="noopener" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Alain Kimbu Nikang. All rights reserved.</p>
+        </div>
     </footer>
     <script src="../js/main.js"></script>
     <script src="scripts/script.js"></script>

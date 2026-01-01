@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Alain Kimbu</title>
-    <meta name="description" content="Resume of Alain Kimbu: Computer Science Teacher, Web & Mobile Developer, and Graphics Designer. Download and view professional experience, education, and skills.">
+    <meta name="description" content="Resume of Alain Kimbu: App Developer at Skylon, Computer Science Teacher, and Graphics Designer. Expertise in .NET, ASP.NET, Xamarin, Blazor, and mobile development. Download professional resume.">
     <meta name="keywords" content="Alain Kimbu, Resume, Computer Science, Teacher, Web Developer, Mobile Developer, Graphics Designer, Cameroon, Bamenda, Douala, .NET, Xamarin, HTML, CSS, JavaScript">
     <meta name="author" content="Alain Kimbu">
     <meta name="robots" content="index, follow">
@@ -51,16 +51,27 @@
     <!-- <link rel="stylesheet" href="../assets/vendors/tailwind/tailwind.elements.min.css"> -->
     <link rel="stylesheet" href="../assets/vendors/tailwind/tailwindcss.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <!-- <link rel="stylesheet" href="../css/index.css"> -->
+    <link rel="stylesheet" href="../css/index.css">
 
     <script src="../assets/vendors/jquery-3.6.0.min.js"></script>
-    <script src="../assets/vendors/tailwind/tailwindcss.js" deffer></script>
-    <!--script src="../assets/vendors/tailwind/tailwind.elements.min.js" deffer></script-->
+    <script src="../assets/vendors/tailwind/tailwindcss.js" defer></script>
+    <!--script src="../assets/vendors/tailwind/tailwind.elements.min.js" defer></script-->
 </head>
 
-<body>
-    <header>
-
+<body class="with-header">
+    <header class="doc-header">
+        <nav>
+            <a href="../index.html" class="nav-brand ksh">Alain Kimbu</a>
+            <div class="nav-links nr">
+                <a href="../index.html">Home</a>
+                <a href="../resume/index.html" class="active">Resume</a>
+                <a href="../cv/index.html">CV</a>
+                <a href="../portfolio/index.html">Portfolio</a>
+                <a href="#" class="btn-download" onclick="window.print(); return false;">
+                    <i class="fas fa-download"></i> Download PDF
+                </a>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -636,8 +647,42 @@ pdf2htmlEX.defaultViewer = new pdf2htmlEX.Viewer({});
         </section>
     </main>
 
-    <footer>
-
+    <footer class="site-footer nr">
+        <div class="footer-content">
+            <div>
+                <h3>Contact</h3>
+                <p>+237 651008132</p>
+                <p>alainkimbu@gmail.com</p>
+                <p>Bamenda, Cameroon</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <p><a href="../index.html">Home</a></p>
+                <p><a href="../resume/index.html">Resume</a></p>
+                <p><a href="../cv/index.html">Curriculum Vitae</a></p>
+                <p><a href="../portfolio/index.html">Portfolio</a></p>
+            </div>
+            <div>
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/alain-kimbu-6a9695171" target="_blank" rel="noopener" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/AlainKimbu" target="_blank" rel="noopener" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/alainkimbu" target="_blank" rel="noopener" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/alainkimbu" target="_blank" rel="noopener" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Alain Kimbu Nikang. All rights reserved.</p>
+        </div>
     </footer>
     <script src="../js/main.js"></script><!-- 
     <script src="scripts/script.js"></script> -->
