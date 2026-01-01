@@ -72,7 +72,7 @@ html, body {
 }
 
 main {
-    display: none;
+    display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -586,4 +586,352 @@ button.more-btn {
 /* Smooth scroll */
 html {
     scroll-behavior: smooth;
+}
+
+/* ===================================
+   MODERN RESUME STYLING
+   =================================== */
+
+/* Resume Container - Clean, Professional Layout */
+.resume-container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 50px;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    font-family: 'Nunito-Regular', sans-serif;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* Resume Header - Name & Contact */
+.resume-header {
+    text-align: center;
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #4483C4;
+}
+
+.resume-header h1 {
+    font-family: 'Nunito-Black', sans-serif;
+    font-size: 2.8rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.resume-subtitle {
+    font-family: 'Nunito-Bold', sans-serif;
+    font-size: 1.3rem;
+    color: #4483C4;
+    margin-bottom: 15px;
+}
+
+.resume-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.resume-contact a {
+    color: #4483C4;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.resume-contact a:hover {
+    color: #2c5aa0;
+    text-decoration: underline;
+}
+
+.resume-contact i {
+    margin-right: 5px;
+    color: #4483C4;
+}
+
+/* Resume Sections */
+.resume-section {
+    margin-bottom: 35px;
+}
+
+.resume-section h2 {
+    font-family: 'Nunito-Black', sans-serif;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e0e0e0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Professional Summary */
+.professional-summary {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 25px;
+    border-radius: 6px;
+    border-left: 4px solid #4483C4;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 35px;
+}
+
+/* Experience Items */
+.experience-item {
+    margin-bottom: 28px;
+    padding-left: 20px;
+    border-left: 3px solid #e0e0e0;
+    transition: border-color 0.3s;
+}
+
+.experience-item:hover {
+    border-left-color: #4483C4;
+}
+
+.experience-header {
+    margin-bottom: 8px;
+}
+
+.job-title {
+    font-family: 'Nunito-Bold', sans-serif;
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 3px;
+}
+
+.company-name {
+    font-family: 'Nunito-Bold', sans-serif;
+    color: #4483C4;
+    font-size: 1.05rem;
+}
+
+.job-period {
+    color: #666;
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.job-description {
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.job-responsibilities {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 8px;
+}
+
+.job-responsibilities li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+.job-responsibilities li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #4483C4;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Education Items */
+.education-item {
+    margin-bottom: 20px;
+    padding: 18px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 4px solid #4483C4;
+}
+
+.degree-title {
+    font-family: 'Nunito-Bold', sans-serif;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.institution-name {
+    color: #4483C4;
+    font-size: 1rem;
+    margin-bottom: 3px;
+}
+
+.education-period {
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill-category {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 6px;
+    border-top: 3px solid #4483C4;
+}
+
+.skill-category h3 {
+    font-family: 'Nunito-Bold', sans-serif;
+    font-size: 1.05rem;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-list li {
+    padding: 6px 0;
+    color: #555;
+    position: relative;
+    padding-left: 20px;
+}
+
+.skill-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4483C4;
+    font-weight: bold;
+}
+
+/* Skill Tags (Alternative Style) */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: #4483C4;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-family: 'Nunito-Bold', sans-serif;
+    transition: all 0.3s;
+}
+
+.skill-tag:hover {
+    background: #2c5aa0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(68, 131, 196, 0.3);
+}
+
+/* Print Styles for Resumes */
+@media print {
+    body.with-header {
+        padding-top: 0 !important;
+    }
+    
+    .doc-header,
+    .site-footer,
+    .btn-download {
+        display: none !important;
+    }
+    
+    .resume-container {
+        max-width: 100%;
+        padding: 20px;
+        box-shadow: none;
+        border-radius: 0;
+        margin: 0;
+    }
+    
+    .resume-header {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+    
+    .resume-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .resume-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .resume-section {
+        margin-bottom: 20px;
+        page-break-inside: avoid;
+    }
+    
+    .experience-item,
+    .education-item {
+        page-break-inside: avoid;
+    }
+    
+    .professional-summary {
+        background: #f5f5f5 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .skill-category {
+        background: #f5f5f5 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        page-break-inside: avoid;
+    }
+    
+    .skill-tag {
+        background: #4483C4 !important;
+        color: white !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    /* Ensure colors print correctly */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+}
+
+/* Mobile Responsive for Resumes */
+@media (max-width: 768px) {
+    .resume-container {
+        padding: 25px 20px;
+        border-radius: 0;
+    }
+    
+    .resume-header h1 {
+        font-size: 2rem;
+    }
+    
+    .resume-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .resume-contact {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .experience-item {
+        padding-left: 15px;
+    }
 }
