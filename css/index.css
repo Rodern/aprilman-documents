@@ -1,7 +1,4 @@
-@font-face {
-    font-family: KaushanScript-Regular;
-    src: url(../assets/fonts/KaushanScript-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap');
 
 @font-face {
     font-family: Nunito-Regular;
@@ -19,7 +16,7 @@
 }
 
 .ksh {
-    font-family: 'KaushanScript-Regular';
+    font-family: 'Syne', sans-serif;
 }
 
 .nb {
