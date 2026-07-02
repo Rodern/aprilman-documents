@@ -310,6 +310,7 @@ ul, ol {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    white-space: nowrap;
 }
 
 .nav-logo {
@@ -337,7 +338,7 @@ ul, ol {
 .nav-menu {
     display: flex;
     align-items: center;
-    gap: var(--space-lg);
+    gap: clamp(8px, 1.5vw, 24px);
 }
 
 .nav-link {
@@ -374,14 +375,14 @@ ul, ol {
 .nav-actions {
     display: flex;
     align-items: center;
-    gap: var(--space-md);
+    gap: clamp(8px, 1.5vw, 16px);
 }
 
 /* Theme Toggle */
 .theme-toggle {
-    width: 36px;
-    height: 36px;
-    border-radius: 4px;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -390,6 +391,7 @@ ul, ol {
     transition: all var(--duration-normal) var(--ease-spring);
     font-size: 1.1rem;
     transform: rotate(45deg);
+    cursor: pointer;
 }
 
 .theme-toggle i {
@@ -402,6 +404,11 @@ ul, ol {
     transform: rotate(225deg) scale(1.1);
 }
 
+.theme-toggle:focus-visible {
+    outline: 3px solid var(--accent-primary);
+    outline-offset: 2px;
+}
+
 .theme-toggle .icon-sun { display: none; }
 .theme-toggle .icon-moon { display: block; }
 [data-theme="light"] .theme-toggle .icon-sun { display: block; }
@@ -412,15 +419,16 @@ ul, ol {
     display: inline-flex;
     align-items: center;
     gap: var(--space-sm);
-    padding: 10px 24px;
+    padding: 12px 28px;
     background: var(--accent-gradient);
     color: white;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     border-radius: var(--radius-sm);
     transition: all var(--duration-normal) var(--ease-spring);
     position: relative;
     overflow: hidden;
+    white-space: nowrap;
 }
 
 .btn-cta::before {
