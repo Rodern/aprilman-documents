@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# Block crawling of potential internal/dev directories (if added later)
+Disallow: /node_modules/
+Disallow: /.git/
+
 Sitemap: https://alainkimbu.netlify.app/sitemap.xml
