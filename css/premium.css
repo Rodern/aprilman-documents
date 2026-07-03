@@ -327,6 +327,18 @@ ol {
     white-space: nowrap;
 }
 
+@media (max-width: 1024px) {
+    .nav-brand-text {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-brand-text {
+        display: block;
+    }
+}
+
 .nav-logo {
     width: 32px;
     height: 32px;
@@ -389,13 +401,13 @@ ol {
 .nav-actions {
     display: flex;
     align-items: center;
-    gap: clamp(8px, 1.5vw, 16px);
+    gap: clamp(16px, 1.5vw, 24px);
 }
 
 /* Theme Toggle */
 .theme-toggle {
-    width: 44px;
-    height: 44px;
+    width: clamp(32px, 3.5vw, 44px);
+    height: clamp(32px, 3.5vw, 44px);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -797,8 +809,8 @@ ol {
 
 .scroll-indicator {
     position: absolute;
-    bottom: 40px;
-    left: 50%;
+    bottom: clamp(6px, 1vw, 12px);
+    left: calc(50% - 20px);
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
@@ -813,12 +825,22 @@ ol {
 }
 
 .scroll-indicator .scroll-line {
-    width: 1px;
+    width: 60px;
+    text-align: center;
     height: 40px;
     background: var(--accent-gradient);
     position: relative;
     overflow: hidden;
+    /* Create 2 stacked down-facing thin chevrons close together */
+    clip-path: polygon(
+            /* First chevron */
+            0% 10%, 50% 40%, 100% 10%,
+            100% 14%, 50% 44%, 0% 14%,
+            /* Second chevron */
+            0% 24%, 50% 54%, 100% 24%,
+            100% 28%, 50% 58%, 0% 28%);
 }
+
 
 .scroll-indicator .scroll-line::after {
     content: '';
@@ -828,6 +850,18 @@ ol {
     height: 100%;
     background: var(--accent-teal);
     animation: scroll-down 2s ease-in-out infinite;
+}
+
+@media (max-height: 720px) {
+    .scroll-indicator span {
+        display: none;
+    }
+}
+
+@media (max-height: 700px) {
+    .scroll-indicator {
+        display: none;
+    }
 }
 
 @keyframes scroll-down {
