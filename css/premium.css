@@ -488,10 +488,13 @@ ul, ol {
         top: var(--nav-height);
         left: 0;
         right: 0;
-        bottom: 0;
+        height: calc(100vh - var(--nav-height));
         flex-direction: column;
-        justify-content: center;
-        gap: var(--space-2xl);
+        justify-content: flex-start;
+        align-items: center;
+        padding: var(--space-2xl) var(--space-xl);
+        overflow-y: auto;
+        gap: var(--space-xl);
         background: var(--bg-deepest);
         opacity: 0;
         visibility: hidden;
@@ -644,6 +647,7 @@ ul, ol {
 
 .hero-stats {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: clamp(20px, 4vw, 48px);
     margin-bottom: var(--space-3xl);
@@ -661,6 +665,14 @@ ul, ol {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     transition: all var(--duration-normal) var(--ease-spring);
+}
+
+@media (max-width: 768px) {
+    .stat-item {
+        padding: var(--space-md) var(--space-lg);
+        flex: 1 1 calc(50% - 20px);
+        min-width: 120px;
+    }
 }
 
 .stat-item:hover {
