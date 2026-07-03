@@ -1983,3 +1983,181 @@ ol {
     color: var(--accent-primary);
     text-decoration: none;
 }
+
+/* ===== CV PAGE STYLES ===== */
+.cv-wrapper {
+    background: var(--bg-primary);
+    padding: calc(var(--nav-height) + 40px) 20px 40px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Century Gothic', Arial, sans-serif;
+    color: #343434;
+}
+
+.cv-document {
+    background: #ffffff;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: var(--shadow-elevated);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+.cv-sidebar {
+    background: #003D73;
+    color: #ffffff;
+    width: 32%;
+    padding: 40px 25px;
+}
+
+.cv-main {
+    width: 68%;
+    padding: 40px 35px;
+    background: #ffffff;
+}
+
+.cv-header-left {
+    margin-bottom: 40px;
+}
+
+.cv-name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.cv-title {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.cv-section-left {
+    margin-bottom: 30px;
+}
+
+.cv-heading-left {
+    font-size: 1.15rem;
+    font-weight: 700;
+    background: rgba(0,0,0,0.15);
+    padding: 8px 25px;
+    margin: 0 -25px 20px -25px;
+}
+
+.cv-contact-item, .cv-comp-item {
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+    word-break: break-word;
+}
+
+.cv-bold {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.cv-contact-item a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.cv-list-left {
+    margin-left: 20px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.cv-list-left.no-bullets {
+    list-style: none;
+    margin-left: 0;
+}
+
+.cv-summary {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.cv-section {
+    margin-bottom: 35px;
+}
+
+.cv-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #003D73;
+    border-top: 1px solid #d5d6d6;
+    border-bottom: 1px solid #d5d6d6;
+    padding: 8px 0;
+    margin-bottom: 20px;
+}
+
+.cv-job, .cv-edu {
+    margin-bottom: 25px;
+}
+
+.cv-job-meta {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.cv-job-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #343434;
+}
+
+.cv-job-company {
+    font-style: italic;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.cv-job-list {
+    margin-left: 20px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.cv-job-list li {
+    margin-bottom: 6px;
+}
+
+.cv-list-right {
+    margin-left: 20px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.cv-reference {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.cv-reference a {
+    color: #003D73;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .cv-document {
+        flex-direction: column;
+    }
+    .cv-sidebar {
+        width: 100%;
+        padding: 40px 30px;
+    }
+    .cv-main {
+        width: 100%;
+        padding: 40px 30px;
+    }
+    .cv-heading-left {
+        margin: 0 -30px 20px -30px;
+        padding: 8px 30px;
+    }
+}
