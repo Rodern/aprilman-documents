@@ -1987,7 +1987,8 @@ ol {
 /* ===== CV PAGE STYLES ===== */
 .cv-wrapper {
     background: var(--bg-primary);
-    padding: calc(var(--nav-height) + 40px) 20px 40px;
+    padding: 20px 40px;
+    /* padding: calc(var(--nav-height) + 40px) 20px 40px; */
     display: flex;
     justify-content: center;
     font-family: 'Century Gothic', Arial, sans-serif;
@@ -2042,12 +2043,13 @@ ol {
 .cv-heading-left {
     font-size: 1.15rem;
     font-weight: 700;
-    background: rgba(0,0,0,0.15);
+    background: rgba(0, 0, 0, 0.15);
     padding: 8px 25px;
     margin: 0 -25px 20px -25px;
 }
 
-.cv-contact-item, .cv-comp-item {
+.cv-contact-item,
+.cv-comp-item {
     margin-bottom: 16px;
     font-size: 0.9rem;
     word-break: break-word;
@@ -2095,7 +2097,8 @@ ol {
     margin-bottom: 20px;
 }
 
-.cv-job, .cv-edu {
+.cv-job,
+.cv-edu {
     margin-bottom: 25px;
 }
 
@@ -2148,14 +2151,17 @@ ol {
     .cv-document {
         flex-direction: column;
     }
+
     .cv-sidebar {
         width: 100%;
         padding: 40px 30px;
     }
+
     .cv-main {
         width: 100%;
         padding: 40px 30px;
     }
+
     .cv-heading-left {
         margin: 0 -30px 20px -30px;
         padding: 8px 30px;
